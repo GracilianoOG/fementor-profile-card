@@ -28,7 +28,6 @@
   font-family: 'Kumbh Sans', sans-serif;
   max-width: 375px;
   margin: 2rem;
-  min-height: 400px;
   text-align: center;
   transition: transform .45s;
   width: 375px;
@@ -73,7 +72,7 @@
   display: grid;
   font-size: 18px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 1.75rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .card__quantity {
