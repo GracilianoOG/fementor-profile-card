@@ -7,37 +7,35 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Profile card component</title>
 </head>
-<body class="wrapper">
-  <article class="card">
-    <figure class="card__avatar">
-      <img class="card__avatar__image" src="./assets/images/image-victor.jpg" alt="Avatar">
-    </figure>
-    <p class="card__info">
-      <span class="card__name">Victor Crest</span>
-      <span class="card__age">26</span>
-    </p>
-    <p class="card__country">London</p>
-    <section class="card__stats">
-      <article class="card__stat">
-        <p>
-          <div class="card__quantity">80K</div>
-          <span class="card__type">Followers</span>
+<body>
+  <main class="wrapper">
+    <article class="card">
+      <figure class="card__avatar" aria-hidden="true">
+        <img class="card__avatar__image" src="./assets/images/image-victor.jpg" alt="Avatar">
+      </figure>
+      <section class="card__profile" aria-label="Profile">
+        <p class="card__info">
+          <span class="card__name">Victor Crest</span>
+          <span class="card__age">26</span>
         </p>
-      </article>
-      <article class="card__stat">
-        <p>
-          <div class="card__quantity">803K</div>
-          <span class="card__type">Likes</span>
-        </p>
-      </article>
-      <article class="card__stat">
-        <p>
-          <div class="card__quantity">1.4K</div>
-          <span class="card__type">Photos</span>
-        </p>
-      </article>
-    </section>
-  </article>
+        <p class="card__country">London</p>
+      </section>
+      <section class="card__stats" aria-label="Social Network Status">
+        <article class="card__stat">
+          <p class="card__quantity">80K</p>
+          <p class="card__type">Followers</p>
+        </article>
+        <article class="card__stat">
+          <p class="card__quantity">803K</p>
+          <p class="card__type">Likes</p>
+        </article>
+        <article class="card__stat">
+          <p class="card__quantity">1.4K</p>
+          <p class="card__type">Photos</p>
+        </article>
+      </section>
+    </article>
+  </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
