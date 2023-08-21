@@ -1,1 +1,14 @@
 @import url("./reset.css");
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: lightblue;
+  max-width: 375px;
+}
