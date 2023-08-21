@@ -20,16 +20,23 @@
 
 .card {
   background: url("../images/bg-pattern-card.svg") no-repeat left top/375px var(--white);
+  box-shadow: 0 0 45px rgba(0, 0, 0, .2);
   border-radius: 1rem;
   font-family: 'Kumbh Sans', sans-serif;
   max-width: 375px;
   margin: 2rem;
-  text-align: center;
   min-height: 400px;
+  text-align: center;
+  transition: transform .45s;
   width: 375px;
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
+
 .card__avatar__image {
+  background-color: var(--white);
   border: 6px solid var(--white);
   border-radius: 50%;
   margin: 6rem 0 1rem 0;
@@ -59,12 +66,11 @@
 }
 
 .card__stats {
-  border-top: 1px solid var(--neutral);
-  display: flex;
-  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  display: grid;
   font-size: 18px;
-  padding: 1.75rem 0;
-  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.75rem 2rem;
 }
 
 .card__quantity {
