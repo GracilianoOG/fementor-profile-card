@@ -12,7 +12,10 @@
 .wrapper {
   align-items: center;
   background: 
-    url("../images/bg-pattern-top.svg") no-repeat -300px -500px var(--dark-cyan);
+    url("../images/bg-pattern-top.svg") no-repeat,
+    url("../images/bg-pattern-bottom.svg") no-repeat;
+  background-color: var(--dark-cyan);
+  background-position: -730px -650px, 140px 280px;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -83,4 +86,10 @@
   font-size: .65rem;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    background-position: -300px -500px, 700px 390px;
+  }
 }
