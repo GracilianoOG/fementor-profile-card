@@ -17,8 +17,10 @@
   background-color: var(--dark-cyan);
   background-position: -45.625rem -40.625rem, 8.75rem 17.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  padding: 2rem;
 }
 
 .card {
@@ -27,11 +29,10 @@
   box-shadow: 0 0 2.8125rem rgba(0, 0, 0, .2);
   border-radius: 1rem;
   font-family: 'Kumbh Sans', sans-serif;
-  max-width: var(--card-size);
-  margin: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   transition: transform .45s;
-  width: var(--card-size);
+  width: min(var(--card-size), calc(100vw - 3rem));
 }
 
 .card:hover {
@@ -88,6 +89,18 @@
   font-size: .65rem;
   font-weight: 400;
   letter-spacing: 0.125rem;
+}
+
+.attribution {
+  color: var(--white);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.attribution a {
+  color: var(--very-dark-desaturated-blue);
 }
 
 @media screen and (min-width: 48rem) {
