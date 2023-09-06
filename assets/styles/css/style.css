@@ -14,6 +14,24 @@
   width: 1px;
 }
 
+@keyframes slide-and-fade {
+  0% {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .wrapper {
   align-items: center;
   background: url("../../images/bg-pattern-top.svg") no-repeat, url("../../images/bg-pattern-bottom.svg") no-repeat;
@@ -28,6 +46,7 @@
 
 .card {
   --card-size: 23.4375rem;
+  animation: slide-and-fade 0.65s;
   background: url("../../images/bg-pattern-card.svg") no-repeat left top/var(--card-size) #FFF;
   box-shadow: 0 0 2.8125rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
@@ -86,11 +105,13 @@
 }
 
 .attribution {
+  animation: fade 0.25s 0.55s forwards;
   color: #FFF;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 0.8rem;
   text-align: center;
   font-style: italic;
+  opacity: 0;
 }
 .attribution__link {
   color: hsl(229, 23%, 23%);
