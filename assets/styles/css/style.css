@@ -110,8 +110,7 @@
   text-align: center;
   font-style: italic;
 }
-
-.attribution a {
+.attribution__link {
   color: var(--very-dark-desaturated-blue);
 }
 

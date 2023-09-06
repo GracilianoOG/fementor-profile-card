@@ -107,11 +107,12 @@
   font-size: .8rem;
   text-align: center;
   font-style: italic;
+  
+  &__link {
+    color: var(--very-dark-desaturated-blue);
+  }
 }
 
-.attribution a {
-  color: var(--very-dark-desaturated-blue);
-}
 
 @media screen and (min-width: 48rem) {
   .wrapper {
