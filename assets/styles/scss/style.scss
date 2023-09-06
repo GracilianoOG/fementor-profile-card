@@ -1,5 +1,6 @@
 @import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 :root {
   --white: white;
   --dark-cyan: hsl(185, 75%, 39%);
@@ -20,7 +21,9 @@
 
 .wrapper {
   align-items: center;
-  background: url("../../images/bg-pattern-top.svg") no-repeat, url("../../images/bg-pattern-bottom.svg") no-repeat;
+  background: 
+    url("../../images/bg-pattern-top.svg") no-repeat,
+    url("../../images/bg-pattern-bottom.svg") no-repeat;
   background-color: var(--dark-cyan);
   background-position: -45.625rem -40.625rem, 8.75rem 17.5rem;
   display: flex;
@@ -33,13 +36,13 @@
 .card {
   --card-size: 23.4375rem;
   background: url("../../images/bg-pattern-card.svg") no-repeat left top/var(--card-size) var(--white);
-  box-shadow: 0 0 2.8125rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2.8125rem rgba(0, 0, 0, .2);
   border-radius: 1rem;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   margin-bottom: 1.5rem;
   text-align: center;
-  transition: transform 0.45s;
-  width: min(var(--card-size), 100vw - 3rem);
+  transition: transform .45s;
+  width: min(var(--card-size), calc(100vw - 3rem));
 }
 
 .card:hover {
@@ -55,13 +58,13 @@
 
 .card__info {
   font-size: 1.125rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: .6rem;
 }
 
 .card__name {
   color: var(--very-dark-desaturated-blue);
   font-weight: 700;
-  margin-right: 0.25rem;
+  margin-right: .25rem;
 }
 
 .card__age {
@@ -71,13 +74,13 @@
 
 .card__country {
   color: var(--dark-grayish-blue);
-  font-size: 0.9rem;
+  font-size: .9rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 .card__stats {
-  border-top: 0.0625rem solid rgba(0, 0, 0, 0.1);
+  border-top: 0.0625rem solid rgba(0, 0, 0, .1);
   display: grid;
   font-size: 1.125rem;
   grid-template-columns: repeat(3, 1fr);
@@ -88,20 +91,20 @@
   color: var(--very-dark-desaturated-blue);
   font-weight: 700;
   font-size: 1.125rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: .25rem;
 }
 
 .card__type {
   color: var(--dark-grayish-blue);
-  font-size: 0.65rem;
+  font-size: .65rem;
   font-weight: 400;
   letter-spacing: 0.125rem;
 }
 
 .attribution {
   color: var(--white);
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.8rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: .8rem;
   text-align: center;
   font-style: italic;
 }
