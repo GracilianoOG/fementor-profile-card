@@ -19,7 +19,7 @@
 .card {
   --card-size: 23.4375rem;
   background: url("../../images/bg-pattern-card.svg") no-repeat left top/var(--card-size) map-get($colors, "white");
-  box-shadow: 0 0 2.8125rem rgba(0, 0, 0, .2);
+  box-shadow: 0 0 2.8125rem rgba(map-get($colors, "black"), .2);
   border-radius: 1rem;
   font-family: 'Kumbh Sans', sans-serif;
   margin-bottom: 1.5rem;
@@ -28,7 +28,7 @@
   width: min(var(--card-size), 100vw - 3rem);
 
   &:hover {
-    box-shadow: 0 0 2.8125rem rgba(0, 0, 0, .4);
+    box-shadow: 0 0 2.8125rem rgba(map-get($colors, "black"), .4);
   }
   
   &__avatar-image {
@@ -62,7 +62,7 @@
   }
   
   &__stats {
-    border-top: 0.0625rem solid rgba(0, 0, 0, .1);
+    border-top: 0.0625rem solid rgba(map-get($colors, "black"), .1);
     display: grid;
     font-size: 1.125rem;
     grid-template-columns: repeat(3, 1fr);
