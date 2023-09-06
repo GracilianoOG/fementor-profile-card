@@ -43,11 +43,11 @@
   font-family: "Kumbh Sans", sans-serif;
   margin-bottom: 1.5rem;
   text-align: center;
-  transition: transform 0.45s;
+  transition: box-shadow 0.45s;
   width: min(var(--card-size), 100vw - 3rem);
 }
 .card:hover {
-  transform: scale(1.1);
+  box-shadow: 0 0 2.8125rem rgba(0, 0, 0, 0.4);
 }
 .card__avatar-image {
   background-color: var(--white);
