@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-:root {
-  --white: white;
-  --dark-cyan: hsl(185, 75%, 39%);
-  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
-  --dark-grayish-blue: hsl(227, 10%, 46%);
-  --neutral: hsl(0, 0%, 59%);
-}
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -25,7 +17,7 @@
 .wrapper {
   align-items: center;
   background: url("../../images/bg-pattern-top.svg") no-repeat, url("../../images/bg-pattern-bottom.svg") no-repeat;
-  background-color: var(--dark-cyan);
+  background-color: hsl(185, 75%, 39%);
   background-position: -45.625rem -40.625rem, 8.75rem 17.5rem;
   display: flex;
   flex-direction: column;
@@ -36,7 +28,7 @@
 
 .card {
   --card-size: 23.4375rem;
-  background: url("../../images/bg-pattern-card.svg") no-repeat left top/var(--card-size) var(--white);
+  background: url("../../images/bg-pattern-card.svg") no-repeat left top/var(--card-size) #FFF;
   box-shadow: 0 0 2.8125rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   font-family: "Kumbh Sans", sans-serif;
@@ -49,8 +41,8 @@
   box-shadow: 0 0 2.8125rem rgba(0, 0, 0, 0.4);
 }
 .card__avatar-image {
-  background-color: var(--white);
-  border: 0.375rem solid var(--white);
+  background-color: #FFF;
+  border: 0.375rem solid #FFF;
   border-radius: 50%;
   margin: 6rem 0 1rem 0;
 }
@@ -59,16 +51,16 @@
   margin-bottom: 0.6rem;
 }
 .card__name {
-  color: var(--very-dark-desaturated-blue);
+  color: hsl(229, 23%, 23%);
   font-weight: 700;
   margin-right: 0.25rem;
 }
 .card__age {
-  color: var(--dark-grayish-blue);
+  color: hsl(227, 10%, 46%);
   font-weight: 400;
 }
 .card__country {
-  color: var(--dark-grayish-blue);
+  color: hsl(227, 10%, 46%);
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
@@ -81,27 +73,27 @@
   padding: 1.5rem 2rem;
 }
 .card__quantity {
-  color: var(--very-dark-desaturated-blue);
+  color: hsl(229, 23%, 23%);
   font-weight: 700;
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
 }
 .card__type {
-  color: var(--dark-grayish-blue);
+  color: hsl(227, 10%, 46%);
   font-size: 0.65rem;
   font-weight: 400;
   letter-spacing: 0.125rem;
 }
 
 .attribution {
-  color: var(--white);
+  color: #FFF;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 0.8rem;
   text-align: center;
   font-style: italic;
 }
 .attribution__link {
-  color: var(--very-dark-desaturated-blue);
+  color: hsl(229, 23%, 23%);
 }
 
 @media screen and (min-width: 48rem) {
