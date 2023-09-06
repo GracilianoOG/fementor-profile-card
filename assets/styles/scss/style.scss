@@ -25,7 +25,7 @@
   margin-bottom: 1.5rem;
   text-align: center;
   transition: box-shadow .45s;
-  width: min(var(--card-size), calc(100vw - 3rem));
+  width: min(var(--card-size), 100vw - 3rem);
 
   &:hover {
     box-shadow: 0 0 2.8125rem rgba(0, 0, 0, .4);
